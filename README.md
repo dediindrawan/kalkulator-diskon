@@ -1,2 +1,2 @@
 # kalkulator-diskon
-Simple discount calculator to count price after discount with automatically
+Aplikasi website penghitung harga setelah ditambahkan atau dikurangi dengan nilai diskon secara otomatis.
