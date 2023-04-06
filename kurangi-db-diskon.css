@@ -41,18 +41,89 @@ section div form .input-group input {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  /* section */
+  section {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+
+  section div form {
+    width: 75%;
+    flex-direction: column;
+  }
+
+  section div form .input-group {
+    width: 100%;
+  }
+
+  section div form .input-group input {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+
+  section div form button {
+    width: 100%;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  /* section */
+  section {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+
+  section div form {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  section div form .input-group {
+    width: 49.6%;
+  }
+
+  section div form .input-group:nth-child(3) {
+    width: 100%;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  /* section */
+  section {
+    padding-left: 4em;
+    padding-right: 4em;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  /* section */
+  section {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+
+  section div form {
+    flex-wrap: nowrap;
+  }
+
+  section div form .input-group {
+    width: 26.6%;
+  }
+
+  section div form .input-group:nth-child(3) {
+    width: 26.6%;
+  }
+
+  section div form .input-group input {
+    margin-bottom: 0;
+  }
+
+  section div form button {
+    width: max-content;
+  }
 }
 
 /* Medium devices (landscape tablets, 550px and up) */
@@ -64,11 +135,15 @@ section div form .input-group input {
   }
 
   section div form {
-    width: 100%;
+    width: 75%;
     flex-direction: column;
   }
 
-  section div form input {
+  section div form .input-group {
+    width: 100%;
+  }
+
+  section div form .input-group input {
     width: 100%;
     margin-bottom: 2em;
   }

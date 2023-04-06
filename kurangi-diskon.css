@@ -70,6 +70,7 @@ section div span .wrapper-result {
 @media only screen and (max-width: 600px) {
   /* section */
   section {
+    width: 100%;
     padding-left: 1.5em;
     padding-right: 1.5em;
   }
@@ -95,34 +96,107 @@ section div span .wrapper-result {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  /* section */
+  section {
+    width: 100%;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+
+  section div form {
+    width: 75%;
+    flex-direction: column;
+  }
+
+  section div form .input-group {
+    width: 100%;
+  }
+
+  section div form .input-group input {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+
+  section div form button {
+    width: 100%;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  /* section */
+  section {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+
+  section div form {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  section div form .input-group {
+    width: 49.6%;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  /* section */
+  section {
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+
+  section div form {
+    flex-wrap: nowrap;
+  }
+
+  section div form .input-group {
+    width: 36.2%;
+  }
+
+  section div form .input-group input {
+    margin-bottom: 0;
+  }
+
+  section div form button {
+    width: max-content;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  /* section */
+  section {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+
+  section div form .input-group {
+    width: 40%;
+  }
 }
 
 /* Medium devices (landscape tablets, 550px and up) */
 @media screen and (min-device-width: 550px) and (max-device-width: 992px) and (orientation: landscape) {
   /* section */
   section {
+    width: 100%;
     padding-left: 1.5em;
     padding-right: 1.5em;
   }
 
   section div form {
-    width: 100%;
+    width: 75%;
     flex-direction: column;
   }
 
-  section div form input {
+  section div form .input-group {
+    width: 100%;
+  }
+
+  section div form .input-group input {
     width: 100%;
     margin-bottom: 2em;
   }

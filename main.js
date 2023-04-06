@@ -5,7 +5,7 @@ document.querySelector('.btn-explore').addEventListener('click', () => {
 
 // execute show navlink
 function openNavlink() {
-    document.querySelector('.navlink').classList.toggle('show-navlink')
+    document.querySelector('.side-navlink').classList.toggle('show-navlink')
 };
 
 // execute button onclick
