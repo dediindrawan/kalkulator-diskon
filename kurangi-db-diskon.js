@@ -25,11 +25,6 @@ form.addEventListener('submit', (e) => {
     if (priceInput.value == '' || discountInputOne.value == '' || discountInputTwo.value == '') {
         // show alert
         document.querySelector('.alert').style.display = 'block';
-    } else if (isNaN(priceInput.value) || isNaN(discountInputOne.value) || isNaN(discountInputTwo.value)) {
-        // show alert
-        let alert = document.querySelector('.alert');
-        alert.innerHTML = 'Yang kamu masukkan bukan tipe angka!'
-        alert.style.display = 'block';
     } else {
         // convert string to number
         const convertPrice = parseInt(priceInput.value);

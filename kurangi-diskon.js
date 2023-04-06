@@ -20,11 +20,6 @@ form.addEventListener('submit', (e) => {
     if (priceInput.value == '' || discountInput.value == '') {
         // show alert
         document.querySelector('.alert').style.display = 'block';
-    } else if (isNaN(priceInput.value) || isNaN(discountInput.value)) {
-        // show alert
-        let alert = document.querySelector('.alert');
-        alert.innerHTML = 'Yang kamu masukkan bukan tipe angka!'
-        alert.style.display = 'block';
     } else {
         // convert string to number
         const convertPrice = parseInt(priceInput.value);
