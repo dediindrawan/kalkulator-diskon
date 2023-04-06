@@ -3,6 +3,14 @@ const form = document.getElementById('form');
 const priceInput = document.getElementById('price');
 const discountInput = document.getElementById('discount');
 
+priceInput.addEventListener('click', () => {
+    priceInput.select();
+});
+
+discountInput.addEventListener('click', () => {
+    discountInput.select()
+});
+
 // execute form when submit button onclick by user
 form.addEventListener('submit', (e) => {
     // hold submitted progress only on main page
@@ -12,6 +20,11 @@ form.addEventListener('submit', (e) => {
     if (priceInput.value == '' || discountInput.value == '') {
         // show alert
         document.querySelector('.alert').style.display = 'block';
+    } else if (isNaN(priceInput.value) || isNaN(discountInput.value)) {
+        // show alert
+        let alert = document.querySelector('.alert');
+        alert.innerHTML = 'Yang kamu masukkan bukan tipe angka!'
+        alert.style.display = 'block';
     } else {
         // convert string to number
         const convertPrice = parseInt(priceInput.value);
