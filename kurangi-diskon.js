@@ -8,7 +8,7 @@ priceInput.addEventListener('click', () => {
 });
 
 discountInput.addEventListener('click', () => {
-    discountInput.select()
+    discountInput.select();
 });
 
 // execute form when submit button onclick by user

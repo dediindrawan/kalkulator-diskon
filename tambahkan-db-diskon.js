@@ -9,11 +9,11 @@ priceInput.addEventListener('click', () => {
 });
 
 discountInputOne.addEventListener('click', () => {
-    discountInputOne.select()
+    discountInputOne.select();
 });
 
 discountInputTwo.addEventListener('click', () => {
-    discountInputTwo.select()
+    discountInputTwo.select();
 });
 
 // execute form when submit button onclick by user
