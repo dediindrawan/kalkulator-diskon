@@ -178,6 +178,11 @@ body {
   width: 100%;
 }
 
+.wrapper-navbar .navlink .dropdown-list li:last-child span {
+  margin-right: 4px;
+  color: var(--warning-color);
+}
+
 .wrapper-navbar .navlink .dropdown-list li a {
   width: 100%;
   padding: 1em 3em;
@@ -195,6 +200,11 @@ body {
 
 .wrapper-navbar .side-navlink {
   display: none;
+}
+
+.wrapper-navbar .side-navlink li:nth-child(3) span {
+  margin-right: 4px;
+  color: var(--warning-color);
 }
 
 /* jumbotron */
@@ -298,6 +308,11 @@ footer {
 }
 
 footer .credit a h2 {
+  color: var(--warning-color);
+}
+
+footer .documentation li:last-child span {
+  margin-right: 4px;
   color: var(--warning-color);
 }
 
